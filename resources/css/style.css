@@ -38,9 +38,12 @@ html {
 
 header {
   position: fixed;
+  z-index: 100;
   width: 100%;
   border-bottom: solid 1px #c6c1c1;
   background-color: white;
+  top:0;
+  height: 85px;
 }
 
 header .content {
@@ -51,8 +54,8 @@ header .content {
 
 header .logo {
   flex: 1;
-  color:#4a4a4a;
-
+  text-decoration: none;
+  color: #4a4a4a;
 }
 
 header nav ul {
@@ -122,12 +125,16 @@ header .mobile {
   justify-content: flex-start;
   align-items: flex-start;
   height: 43.5rem;
-  background-image: url(/resources/images/banner-landingpage.jpg);
+  background-image: url('../images/banner-landingpage.jpg');
+  background-position: bottom;
   background-size: cover;
-  background-repeat:no-repeat;
+  background-repeat: no-repeat;
 }
 
 #sign-up-cta {
+  position:relative;
+  top:171px;
+  left:10px;
   padding: 0 5rem 2.5rem 5rem;
   border: solid 1px #979797;
   border-radius: 4px;
